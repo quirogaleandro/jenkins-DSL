@@ -1,9 +1,9 @@
 job('ejemplo-job-DSL') {
 	description('Job DSL de ejemplo jenkins')
   	scm {
-      git('https://github.com/quirogaleandro/jenkins-DSL.git,'main') { node -> 
-        node / gitConfigName('quirogaleandro')
-        node / gitConfigEmail('quirogaleandrob@gmail.com')
+      git('https://github.com/quirogaleandro/jenkins-DSL.git','main') { node -> 
+          node / gitConfigName('quirogaleandro')
+          node / gitConfigEmail('quirogaleandrob@gmail.com')
       }
     }
   	triggers { 
